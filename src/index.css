@@ -11,3 +11,112 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* App Layout */
+.app-area {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.todo-add h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+.todo-add input[type="text"] {
+  width: 75%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.todo-add input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+/* Add Button */
+.add-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Todo List */
+.todo-list {
+  margin-top: 30px;
+}
+
+.todo-list ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-list li:last-child {
+  border-bottom: none;
+}
+
+/* Todo Text */
+.todo-text {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Buttons for each todo item */
+.delete-todo,
+.laud-todo,
+.hoot-todo {
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.delete-todo {
+  color: red;
+}
+
+.laud-todo {
+  color: green;
+}
+
+.hoot-todo {
+  color: orange;
+}
+
+.delete-todo:hover,
+.laud-todo:hover,
+.hoot-todo:hover {
+  transform: scale(1.2);
+}
